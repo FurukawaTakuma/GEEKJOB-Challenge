@@ -19,12 +19,14 @@ import javax.servlet.http.HttpServletResponse;
 
 public class Challenge11_1 extends HttpServlet {
       //追加場所
-            void MyProfile(PrintWriter prf){
-
-            prf.print("私の名前は古川　拓馬です。<br>");
-            prf.print("誕生日は6月5日です。<br>");
-            prf.print("趣味は動画鑑賞です。よろしくお願いします。<br>");
+            void MyProfile(PrintWriter prf,int roop){
+            for(int i = 1; i<roop+1; i++){
+                prf.print("私の名前は古川　拓馬です。<br>");
+                prf.print("誕生日は6月5日です。<br>");
+                prf.print("趣味は動画鑑賞です。よろしくお願いします。<br>");
+                prf.print("ループ数"+i+"<br><br>");
         }
+            }
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -49,7 +51,7 @@ public class Challenge11_1 extends HttpServlet {
             out.println("<h1>Servlet Challenge11_1 at " + request.getContextPath() + "</h1>");
             
             //追加場所
-            MyProfile(out);
+            MyProfile(out,10);
             
             
             out.println("</body>");
