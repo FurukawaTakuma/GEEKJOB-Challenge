@@ -28,17 +28,10 @@ public class challenge11_2_2 extends HttpServlet {
             pw.print(total);
         }
        }
- // Num2とAuthenticityの両方をデフォルトにしないと使えない 
- // void Keisan(int Num1,PrintWriter pw){
- //        Keisan(Num1,5,false,pw);
-    
-    void Keisan(int Num1,boolean Authenticity,PrintWriter pw){
-        Keisan(Num1,5,Authenticity,pw);
-    }
-    void Keisan(int Num1,int Num2,PrintWriter pw){
-        Keisan(Num1,Num2,false,pw);
-    }
 
+        void Keisan(int Num1,PrintWriter pw){
+         Keisan(Num1,5,false,pw);
+   }
 
     
 
@@ -66,7 +59,7 @@ public class challenge11_2_2 extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet challenge11_2_2 at " + request.getContextPath() + "</h1>");
-            Keisan(4,8,out);
+            Keisan(4,out);
             out.println("</body>");
             out.println("</html>");
         }
