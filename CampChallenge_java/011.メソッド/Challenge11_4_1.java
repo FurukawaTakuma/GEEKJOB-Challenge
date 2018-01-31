@@ -22,18 +22,20 @@ public class Challenge11_4_1 extends HttpServlet {
 
         
         HashMap<String,String> User1 = new HashMap<String,String>();
+            User1.put("ID","Use1");
             User1.put("Name","Aさん");
             User1.put("BirthDay","1月1日");
             User1.put("Address","Aさんの住所");
     
         
         HashMap<String,String> User2 = new HashMap<String,String>();
+            User2.put("ID","User2");
             User2.put("Name","Bさん");
             User2.put("BirthDay","2月2日");
             User2.put("Address","Bさんの住所"); 
             
         HashMap<String,String> User3 = new HashMap<String,String>();
-            User3.put("ID", "3");
+            User3.put("ID", "User3");
             User3.put("Name","Cさん");
             User3.put("BirthDay","3月3日");
             User3.put("Address","Cさんの住所");
