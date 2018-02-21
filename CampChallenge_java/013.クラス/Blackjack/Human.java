@@ -18,7 +18,8 @@ abstract class Human {
     abstract public void setCard(ArrayList<Integer> list);
 
     abstract public boolean checkSum();
-    ArrayList<Integer> myCard = new ArrayList<Integer>();
+    
+    protected ArrayList<Integer> myCard = new ArrayList<Integer>();
 
 }
 
