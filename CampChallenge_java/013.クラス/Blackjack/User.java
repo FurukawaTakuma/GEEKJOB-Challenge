@@ -14,36 +14,7 @@ import java.util.Random;
  */
 public class User extends Human {
 
-    protected ArrayList<Integer> cards = new ArrayList<Integer>();
 
-    public User() {
-        for (int j = 0; j < 4; j++) {
-            for (int i = 1; 0 < i && i < 14; i++) {
-                cards.add(i);
-            }
-        }
-    }
-
-    public ArrayList<Integer> deal() {
-        ArrayList<Integer> henkyaku = new ArrayList<Integer>();
-        Random rand = new Random();
-
-        for (int i = 0; i < 2; i++) {
-            int num = rand.nextInt(cards.size());
-            henkyaku.add(cards.remove(num));
-        }
-        return henkyaku;
-    }
-
-    public ArrayList<Integer> hit() {
-        ArrayList<Integer> henkyaku = new ArrayList<Integer>();
-        Random rand = new Random();
-
-        int num = rand.nextInt(cards.size());
-        henkyaku.add(cards.remove(num));
-
-        return henkyaku;
-    }
 
     public void setCard(ArrayList<Integer> list) {
         myCard = list;

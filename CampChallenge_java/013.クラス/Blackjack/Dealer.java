@@ -18,7 +18,7 @@ public class Dealer extends Human {
 
     public Dealer() {
         for (int j = 0; j < 4; j++) {
-            for (int i = 1; 0 < i && i < 14; i++) {
+            for (int i = 1; i <= 13; i++) {
                 cards.add(i);
             }
         }

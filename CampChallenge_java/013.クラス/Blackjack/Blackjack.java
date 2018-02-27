@@ -23,22 +23,19 @@ public class Blackjack {
 //            dr.setCard(deal);
 //            System.out.println(dr.myCard);
 //            System.out.println(dr.open());
-        dr.deal();
+
+
         ArrayList<Integer> dealdr = dr.deal();
         dr.setCard(dealdr);
-
-        us.deal();
-        ArrayList<Integer> dealus = us.deal();
-        dr.setCard(dealus);
+        ArrayList<Integer> dealus = dr.deal();
+        us.setCard(dealus);
 
         while (dr.checkSum() == false) {
-            dr.hit();
             dr.myCard.addAll(dr.hit());
             dr.checkSum();
         }
 
         while (us.checkSum() == false) {
-            us.hit();
             us.myCard.addAll(dr.hit());
             us.checkSum();
         }
