@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <form action = "/Challenge/Challenge3" method = "get">
+    <font size=5>氏名</font>
+    <input type="text" name = "textbox">
+    <br><br>
+    
+    年齢
+    <input type="text" name = "Age" size="2">
+    <br><br>
+    
+    職業<br>
+    
+    <input type="radio" name = "check" value="kaisya">
+    会社員
+    <input type="radio" name = "check" value="koumu">
+    公務員
+    <input type="radio" name = "check" value="gakuse">
+    学生
+    <input type="radio" name = "check" value="sonota">
+    その他
+    <br><br>
+    
+    性別<br>
+    男性
+    <input type="radio" name = "gender" value="male">
+    女性
+    <input type="radio" name = "gender" value="female">
+    <br><br>
+    
+    <input type="button" name = "btn" value="前のページへ戻る" onclick="history.back()">
+    <br><br>
+    
+    血液型
+    <select name="blood" size="4">
+    <option value="A">A型</option>
+    <option value="B">B型</option>
+    <option value="AB">AB型</option>
+    <option value="O">O型</option>
+    </select>
+    <br><br>
+    
+
+    趣味
+    <textarea name="mulText"></textarea>
+    <br><br>
+    
+    <input type="submit" name = "submitbtn" value ="送信">
+    <input type="reset" value="リセット">
+    <br><br>
+    </form>
+    </body>
+</html>
